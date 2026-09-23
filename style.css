@@ -298,7 +298,6 @@ body {
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .project-card:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); transform: translateY(-2px); }
-.project-card-open { border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
 .project-top {
   display: flex;
   justify-content: space-between;
@@ -315,7 +314,6 @@ body {
   padding: 4px 9px;
   border-radius: 999px;
 }
-.project-badge-open { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
 .project-period { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-faint); }
 .project-card h3 { margin: 0 0 4px; font-size: 1.2rem; }
 .project-org { color: var(--text-faint); font-size: 0.9rem; margin: 0 0 14px; }
@@ -376,15 +374,6 @@ body {
   padding: 4px 9px;
   border-radius: 6px;
 }
-.project-links { margin-top: 16px; }
-.project-link {
-  color: var(--accent);
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 0.92rem;
-}
-.project-link:hover { text-decoration: underline; }
-.project-link-pending { color: var(--text-faint); cursor: default; }
 
 /* Skills */
 .skills-grid {

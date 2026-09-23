@@ -20,8 +20,8 @@ A static, no-build-step personal site (`index.html`, `style.css`, `script.js`). 
 
 ## Before you publish — things to update
 
-- [ ] `index.html` → the GenAI Resume Assistant project card currently says "Code repository — publishing soon". Once you push that project to a public GitHub repo, replace that `<span class="project-link project-link-pending">…</span>` with `<a href="https://github.com/<you>/<repo>" class="project-link">View code on GitHub →</a>`.
 - [ ] `assets/Aviral_Jain_Resume.pdf` is currently your AI-focused resume (leads with GenAI/RAG/LLM + CV) — matches the site's own "Computer Vision & Applied GenAI" positioning and the broadest slice of roles you're targeting. Swap in the ML-focused version instead if you shift toward more classical-ML/stats roles.
+- [ ] All four featured projects are now marked confidential/employer-owned. If you ever build and publish a personal open-source project, add a new project card for it with a real GitHub link — don't reuse a placeholder link on work you don't own the code to.
 - [ ] Add a custom domain later via repo → Settings → Pages → Custom domain, if you buy one.
 
 ## Local preview

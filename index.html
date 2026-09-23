@@ -46,9 +46,9 @@
     <h1>Aviral Jain</h1>
     <p class="hero-lede">
       I build production ML systems that turn messy real-world data — microscopy images,
-      sensor logs, documents — into decisions people trust. Currently finishing a Master's in
-      Data Science at Uppsala University while shipping computer-vision and GenAI pipelines
-      in industry.
+      sensor logs, documents — into decisions people trust. I hold a Master's in Data
+      Science (Machine Learning and Statistics) from Uppsala University and have been
+      shipping computer-vision and GenAI pipelines in industry alongside it.
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#projects">View projects</a>
@@ -92,14 +92,15 @@
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-head">
-              <h3>Summer Worker — Data Science / Machine Learning</h3>
-              <span class="timeline-date">Jun 2026 — Present</span>
+              <h3>R&amp;D Technician</h3>
+              <span class="timeline-date">Jun 2026 — Aug 2026</span>
             </div>
             <p class="timeline-org">Alleima · Sandviken, Sweden</p>
             <ul>
-              <li>Built and extended computer-vision and deep-learning pipelines for real-world SEM and LOM production datasets.</li>
-              <li>Shipped a machine-learning-based visual quality inspection system for production images, cutting manual surface inspection by <strong>99%</strong>.</li>
-              <li>Developed automated image-analysis workflows for grain-boundary detection and phase identification with PyTorch, OpenCV, and classical CV.</li>
+              <li>Built and extended computer-vision and deep-learning pipelines for real-world SEM and LOM production datasets, improving robustness across varying image conditions.</li>
+              <li>Developed automated image-analysis workflows for grain-boundary detection and phase identification, extracting quantitative features with PyTorch, OpenCV, and classical CV.</li>
+              <li>Shipped a machine-learning-based visual quality inspection system for production images, cutting manual surface inspection time by <strong>99%</strong>.</li>
+              <li>Modeled image intensity, texture, and defect characteristics to predict material readiness for packaging, reducing reliance on manual re-pickling decisions.</li>
             </ul>
           </div>
         </li>
@@ -114,6 +115,7 @@
             <ul>
               <li>Built LLM-powered RAG applications combining retrieval with generation for context-aware responses.</li>
               <li>Shipped production AI services with Python, FastAPI, and Flask, deployed on GCP with Docker and MLflow.</li>
+              <li>Integrated ML models, LLM services, and databases behind REST APIs consumed by other product teams.</li>
               <li>Reached <strong>95%+</strong> extraction accuracy on document-processing tasks by combining OCR, NLP, and ML.</li>
             </ul>
           </div>
@@ -127,9 +129,8 @@
     <div class="container">
       <h2 class="section-title"><span class="tag">03</span>Featured Projects</h2>
       <p class="section-intro">
-        The first three were built for employers on confidential data and code, so I'm
-        describing approach and outcome rather than sharing a repo. The last is a personal,
-        open-source build.
+        All of these were built for employers on confidential data and code, so I'm
+        describing approach and outcome rather than sharing a repo.
       </p>
 
       <div class="projects-grid">
@@ -186,22 +187,25 @@
           <h3>Explainable ML + RAG for Vehicle Comfort Analysis</h3>
           <p class="project-org">Scania Group</p>
           <p class="project-desc">
-            An XGBoost model identifies which truck components most influence ride comfort;
-            SHAP explains each prediction; an LLM-powered RAG assistant turns those
-            explanations into natural-language, component-level recommendations for engineers.
+            Engineers previously built component combinations by hand and used MATLAB to plot
+            driver-seat movement in X/Y/Z to judge ride comfort — a slow, manual way to compare
+            setups. We trained an XGBoost model with SHAP to identify which components actually
+            drive that seat movement the most, then fed those results into a RAG-based chatbot
+            so engineers can ask, in plain language, which component combination gives the best
+            comfort for a specific truck use case.
           </p>
-          <svg class="project-diagram" viewBox="0 0 560 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline: ride test data, XGBoost model, SHAP explanations, RAG conversational assistant">
+          <svg class="project-diagram" viewBox="0 0 560 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline: component and seat motion data, XGBoost model, SHAP explanations, RAG chatbot">
             <g class="diagram-nodes">
               <rect x="4" y="30" width="120" height="50" rx="8"/>
-              <text x="64" y="53" text-anchor="middle">Ride test</text>
-              <text x="64" y="68" text-anchor="middle">data</text>
+              <text x="64" y="53" text-anchor="middle">Component +</text>
+              <text x="64" y="68" text-anchor="middle">seat XYZ data</text>
               <rect x="160" y="30" width="100" height="50" rx="8"/>
               <text x="210" y="59" text-anchor="middle">XGBoost</text>
               <rect x="296" y="30" width="100" height="50" rx="8"/>
               <text x="346" y="59" text-anchor="middle">SHAP</text>
               <rect x="432" y="30" width="126" height="50" rx="8"/>
               <text x="495" y="53" text-anchor="middle">RAG</text>
-              <text x="495" y="68" text-anchor="middle">assistant</text>
+              <text x="495" y="68" text-anchor="middle">chatbot</text>
             </g>
             <g class="diagram-arrows">
               <path d="M124 55 H160"/>
@@ -210,9 +214,9 @@
             </g>
           </svg>
           <ul class="project-facts">
-            <li><strong>95%+</strong> faster interpretation of test data across truck configurations</li>
-            <li>Per-component explainability, not just a black-box score</li>
-            <li>Natural-language recommendations engineers can act on directly</li>
+            <li>Replaced manual MATLAB plotting of seat motion with a model that ranks which components actually drive comfort</li>
+            <li>SHAP gives per-component explainability, not just a black-box prediction</li>
+            <li>Chatbot lets engineers query the best component combination for a given use case, in natural language</li>
           </ul>
           <div class="project-tags">
             <span>XGBoost</span><span>SHAP</span><span>RAG</span><span>LLMs</span>
@@ -261,13 +265,13 @@
         </article>
 
         <!-- Project 4: GenAI Resume Assistant -->
-        <article class="project-card project-card-open">
+        <article class="project-card">
           <div class="project-top">
-            <span class="project-badge project-badge-open">Personal · Open Source</span>
+            <span class="project-badge">Industry · Confidential</span>
             <span class="project-period">2026</span>
           </div>
           <h3>GenAI Interview &amp; Resume Optimization Assistant</h3>
-          <p class="project-org">Side project</p>
+          <p class="project-org">Applied AI project</p>
           <p class="project-desc">
             An LLM-powered assistant that reads a résumé and a target job description,
             surfaces skill/experience gaps against that JD, generates ATS-oriented
@@ -281,9 +285,6 @@
           </ul>
           <div class="project-tags">
             <span>LangChain</span><span>RAG</span><span>FastAPI</span><span>GCP</span>
-          </div>
-          <div class="project-links">
-            <span class="project-link project-link-pending">Code repository — publishing soon</span>
           </div>
         </article>
 
@@ -318,7 +319,7 @@
         </div>
         <div class="skill-group">
           <h3>Cloud &amp; Data</h3>
-          <p>GCP · Azure · AWS SageMaker · MySQL · Vector Databases (FAISS, ChromaDB)</p>
+          <p>GCP · Azure · AWS SageMaker · MySQL · Vector Databases (FAISS, ChromaDB, pgvector)</p>
         </div>
       </div>
     </div>
@@ -352,7 +353,7 @@
   <section class="section section-contact" id="contact">
     <div class="container contact-inner">
       <h2 class="section-title"><span class="tag">06</span>Get in touch</h2>
-      <p class="contact-lede">Open to AI/ML, computer vision, and applied GenAI roles across Northern Europe.</p>
+      <p class="contact-lede">Open to AI/ML, computer vision, and applied GenAI roles anywhere in the world.</p>
       <div class="contact-links">
         <a href="mailto:aviraljain2712@gmail.com" class="btn btn-primary">Email me</a>
         <a href="https://linkedin.com/in/aviral-jain2712" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
